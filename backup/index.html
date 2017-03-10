@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Ajukan Acara - HaloAcara</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="customheader lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Back to HaloAcara.com</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Back to HaloAcara.com</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center blue-text">Ajukan Acara Anda</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Lorem ipsum dolor sit amet</h5>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <form class="col s10 offset-s1" id="main-card">
+
+          <h5>Identitas</h5>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="name" type="text">
+              <label for="name">Nama Lengkap</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="email" type="text">
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="phone" type="text">
+              <label for="phone">No Telepon</label>
+            </div>
+          </div>
+
+          <h5>Detail Acara</h5>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="theme" type="text">
+              <label for="theme">Tema Acara</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="event_type" type="text">
+              <label for="event_type">Jenis Acara</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="event_budget" type="number">
+              <label for="event_budget">Budget Umum (Rp)</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="event_description" type="text" class="materialize-textarea"></textarea>
+              <label for="event_description">Deskripsi Singkat</label>
+            </div>
+          </div>
+
+          <h5>Tempat</h5>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="location" type="text" >
+              <label for="location">Lokasi Acara</label>
+            </div>
+            <div class="input-field col s6">
+              <select>
+                <option value="1" selected>Tertutup</option>
+                <option value="2">Terbuka</option>
+              </select>
+              <label for="location_type">Tipe Lokasi</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="capacity" type="number">
+              <label for="capacity">Kapasitas Tamu</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="duration" type="number">
+              <label for="duration">Durasi Sewa (Jam)</label>
+            </div>
+          </div>
+          <h6>Fasilitas</h6>
+          <div class="row">
+            <div class="input-field col s3">
+              <input id="nChair" type="number">
+              <label for="nChair">Jumlah Bangku</label>
+            </div>
+            <div class="input-field col s3">
+              <input id="nAC" type="number">
+              <label for="nAC">Jumlah AC</label>
+            </div>
+            <div class="input-field col s3">
+              <input id="nBlower" type="number">
+              <label for="nBlower">Jumlah Blower</label>
+            </div>
+            <div class="input-field col s3">
+              <input id="nElectricity" type="number">
+              <label for="facility_watt">Kapasitas Listrik (watt)</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="facility_budget" type="number">
+              <label for="facility_budget">Budget (Rp)</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="facility_description" type="text" class="materialize-textarea"></textarea>
+              <label for="facility_description">Keterangan Tambahan</label>
+            </div>
+          </div>
+
+          <h5>Pakaian</h5>
+          <div class="row">
+            <div class="input-field col s12">
+              <select>
+                <option value="1" selected>Kaos 20s Combed</option>
+                <option value="2">Kaos 30s Combed</option>
+                <option value="3">Jaket</option>
+                <option value="4">Parka</option>
+                <option value="5">Hoodie</option>
+                <option value="6">Polo Shirt</option>
+                <option value="7">Celana</option>
+                <option value="8">Sepatu</option>
+              </select>
+              <label for="apparel_type">Jenis Barang</label>
+            </div>
+          </div>
+          <h6>Jumlah Barang Berdasarkan Ukuran</h6>
+          <div class="row">
+            <div class="input-field col s2">
+              <input id="nS" type="number">
+              <label for="nS">S</label>
+            </div>
+            <div class="input-field col s2">
+              <input id="nM" type="number">
+              <label for="nM">M</label>
+            </div>
+            <div class="input-field col s2">
+              <input id="nL" type="number">
+              <label for="nL">L</label>
+            </div>
+            <div class="input-field col s2">
+              <input id="nXL" type="number">
+              <label for="nXL">XL</label>
+            </div>
+            <div class="input-field col s2">
+              <input id="nXXL" type="number">
+              <label for="nXXL">XXL</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <h7>Upload Desain</h7>
+              <div class="file-field input-field">
+                <div class="btn">
+                  <span>File</span>
+                  <input type="file">
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="apparel_budget" type="number">
+              <label for="apparel_budget">Budget (Rp)</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="apparel_description" type="text" class="materialize-textarea"></textarea>
+              <label for="apparel_description">Keterangan Tambahan</label>
+            </div>
+          </div>
+
+          <h5>Percetakan</h5>
+          <div class="row">
+            <div class="input-field col s12">
+              <select>
+                <option value="1" selected>Spanduk</option>
+                <option value="2">X-Banner</option>
+                <option value="3">Y-Banner</option>
+                <option value="4">Kartu Nama</option>
+                <option value="5">Kartu Panitia</option>
+                <option value="6">Sertifikat</option>
+                <option value="7">Plakat</option>
+              </select>
+              <label for="printing_type">Jenis Barang</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="nPrint" type="number">
+              <label for="nPrint">Jumlah Barang</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="print_duration" type="number">
+              <label for="print_duration">Lama Pekerjaan (hari)</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <h7>Upload Desain</h7>
+              <div class="file-field input-field">
+                <div class="btn">
+                  <span>File</span>
+                  <input type="file">
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="print_budget" type="number">
+              <label for="print_budget">Budget (Rp)</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="print_description" type="text" class="materialize-textarea"></textarea>
+              <label for="print_description">Keterangan Tambahan</label>
+            </div>
+          </div>
+
+          <h5>Sound &amp; Lighting</h5>
+          <div class="row">
+            <div class="input-field col s12">
+              <select>
+                <option value="1" selected>Sound Besar</option>
+                <option value="2">Speaker Besar</option>
+                <option value="3">Microphone</option>
+                <option value="4">Mixer</option>
+                <option value="5">Lighting Panggung</option>
+                <option value="6">Peralatan Band</option>
+              </select>
+              <label for="sl_type">Jenis Barang</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s4">
+              <input id="nPrint" type="number">
+              <label for="nPrint">Jumlah Barang</label>
+            </div>
+            <div class="input-field col s4">
+              <input id="print_duration" type="number">
+              <label for="sl_watt">Kapasitas Listrik (watt)</label>
+            </div>
+            <div class="input-field col s4">
+              <input id="sl_duration" type="number">
+              <label for="sl_duration">Lama Penyewaan (jam)</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="sl_budget" type="number">
+              <label for="sl_budget">Budget (Rp)</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="sl_description" type="text" class="materialize-textarea"></textarea>
+              <label for="sl_description">Keterangan Tambahan</label>
+            </div>
+          </div>
+
+          <h5>Merchandise</h5>
+          <div class="row">
+            <div class="input-field col s12">
+              <select>
+                <option value="1" selected>Bunga</option>
+                <option value="2">Boneka</option>
+                <option value="3">Notes</option>
+                <option value="4">Bantal</option>
+                <option value="5">Gantungan Kunci</option>
+                <option value="6">Pin</option>
+                <option value="7">Balon</option>
+              </select>
+              <label for="merchandise_type">Jenis Barang</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="nMerchandise" type="number">
+              <label for="nMerchandise">Jumlah Barang</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="merchandise_duration" type="number">
+              <label for="merchandise_duration">Lama Pekerjaan (hari)</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <h7>Upload Desain</h7>
+              <div class="file-field input-field">
+                <div class="btn">
+                  <span>File</span>
+                  <input type="file">
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="merchandise_budget" type="number">
+              <label for="merchandise_budget">Budget (Rp)</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="merchandise_description" type="text" class="materialize-textarea"></textarea>
+              <label for="merchandise_description">Keterangan Tambahan</label>
+            </div>
+          </div>
+
+          <h5>Dekorasi</h5>
+          <div class="row">
+            <div class="input-field col s12">
+              <select>
+                <option value="1" selected>Pita</option>
+                <option value="2">Lampu</option>
+                <option value="3">Balon</option>
+                <option value="4">Craft</option>
+              </select>
+              <label for="decor_type">Jenis Barang</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s4">
+              <input id="nDecor" type="number">
+              <label for="nDecor">Jumlah Barang</label>
+            </div>
+            <div class="input-field col s4">
+              <select>
+                <option value="1" selected>Indoor</option>
+                <option value="2">Outdoor</option>
+              </select>
+              <label for="decor_location">Lokasi Dekorasi</label>
+            </div>
+            <div class="input-field col s4">
+              <input id="decor_duration" type="number">
+              <label for="decor_duration">Lama Pengerjaan (hari)</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="decor_budget" type="number">
+              <label for="decor_budget">Budget (Rp)</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="decor_description" type="text" class="materialize-textarea"></textarea>
+              <label for="decor_description">Keterangan Tambahan</label>
+            </div>
+          </div>
+
+          <div class="row center">
+            <a href="#" class="btn-large waves-effect waves-light green">Kirim</a>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
